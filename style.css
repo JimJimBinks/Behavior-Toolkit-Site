@@ -169,6 +169,16 @@ h3 {
   border-color: transparent;
 }
 
+span.button {
+  cursor: default;
+}
+
+.actions-note {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 14px 0 0;
+}
+
 .hero-card,
 .card,
 .notice {
