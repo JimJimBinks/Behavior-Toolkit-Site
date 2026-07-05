@@ -272,6 +272,23 @@ h3 {
   padding: 22px;
 }
 
+.card-shot {
+  margin: -22px -22px 18px;
+  display: flex;
+  justify-content: center;
+  background: var(--bg-soft);
+  border-radius: 28px 28px 0 0;
+  overflow: hidden;
+}
+
+.card-shot img {
+  width: 100%;
+  max-width: 190px;
+  height: auto;
+  display: block;
+  margin-top: 18px;
+}
+
 .card p,
 .notice p,
 .legal p,
