@@ -23,13 +23,13 @@
   <main class="legal">
     <p class="eyebrow">Privacy Policy</p>
     <h1>Privacy Policy</h1>
-    <p><strong>Last updated:</strong> November 2, 2026</p>
+    <p><strong>Last updated:</strong> November 16, 2026</p>
 
     <h2>Privacy at a glance</h2>
     <ul class="check-list">
       <li>Your records are stored on your device. Optional syncing, sharing, exports, and device backups can create copies elsewhere.</li>
       <li>Optional iCloud and Care Circle features use Apple's services. The developer does not receive your records automatically or use them for advertising or tracking.</li>
-      <li>Microphone audio is analyzed on-device, without saving or uploading recordings. Session records generated from detections can sync like other records.</li>
+      <li>Sound Monitor audio is analyzed on-device, without saving or uploading recordings. Session records generated from detections can sync like other records.</li>
       <li>Exported backups, CSV files, and PDFs are not encrypted or password-protected by the app. Share them only with people and services you trust.</li>
     </ul>
 
@@ -43,9 +43,12 @@
     <p>Records are stored on your device. The app and its widgets share necessary information through an Apple App Group container. Your device's security, passcode, backup settings, and Apple's platform protections help protect that storage.</p>
     <p>When iCloud is available and syncing is enabled, records can sync through Apple's CloudKit service across your devices. The app writes synced record contents to CloudKit encrypted fields. CloudKit manages this encryption and account access. Operational information such as record identifiers, update timestamps, sharing metadata, and notification event types is separate from the encrypted record contents. Cloud encryption does not encrypt files you export from the app.</p>
     <p>Apple's handling of iCloud and device backups is governed by Apple's policies and your Apple account settings. The developer does not receive your private iCloud records merely because you use the app.</p>
+    <p>If the Apple Account used for sync changes, the app pauses syncing and asks you to review the change. You can choose to keep using records on this device without approving sync to the new account.</p>
 
     <h2>Care Circle</h2>
-    <p>Care Circle uses Apple's CloudKit sharing to let you share selected records with caregivers you invite. Invited caregivers can access shared information and, where their permissions allow, make changes. Review who has access and invite only people you trust. Ending sharing cannot recall files, screenshots, or other copies someone already made.</p>
+    <p>Care Circle uses Apple's CloudKit sharing to share selected profiles with invited caregivers. All members receive the same included profiles and can edit shared records. Shared information includes existing history and future sessions, notes, medication and sleep records, observations, events, and shared settings. Quick Log entries and active timers are excluded from the shared snapshot; separate session alerts may be sent. New profiles start excluded until the owner confirms sharing. Existing sharing choices are retained.</p>
+    <p>Joining downloads the circle's shared history. If the device already has other history, setup requires a separate review and keeps recovery copies before adopting the shared records. It does not automatically upload that other history. Downloaded records may also sync to a participant's own private iCloud storage.</p>
+    <p>Review who has access and invite only people you trust. Included notes may mention other people; the app does not automatically redact them. Leaving a circle, removing access, or excluding a previously shared profile stops future sharing but does not recall records already downloaded, private-cloud copies, backups, screenshots, or exports. Invited caregivers can leave through the app's Care Circle controls.</p>
 
     <h2>Optional microphone monitoring</h2>
     <p>Sound Monitor requests microphone permission before analyzing live audio for selected sounds. Analysis uses Apple's on-device SoundAnalysis framework. The app does not save sound recordings or upload microphone audio.</p>
@@ -54,6 +57,10 @@
     <h2>On-device summaries</h2>
     <p>On supported devices, optional Apple Intelligence features use Apple's on-device model to summarize notes and patterns. The app does not send these prompts to a developer-operated or third-party AI server. Saved records and summaries may still be included in the app's normal sync or user-chosen exports. Review generated summaries for mistakes.</p>
 
+    <h2>Siri and Shortcuts</h2>
+    <p>Siri and Shortcuts can access the child names, behavior labels, and medication names needed to select records and carry out supported actions. Logging actions require authentication. Behavior, observation, and medication logging confirmations are brief, but Siri may still show or speak details when resolving a request.</p>
+    <p>Siri and Dictation follow Apple's privacy settings and may process requests off-device. Spoken requests can include names, notes, and background voices. This differs from the app's on-device summaries and Sound Monitor. In most cases, logging directly in the app rather than by voice is a better choice for sensitive details or noisy surroundings. See <a href="https://www.apple.com/legal/privacy/data/en/ask-siri-dictation/">Apple's Siri and Dictation privacy information</a>.</p>
+
     <h2>Widgets and notifications</h2>
     <p>Care Circle notifications are delivered through Apple's CloudKit subscription and push notification services. Behavior Toolkit does not operate a separate notification server. Messages such as “Behavior timer started” do not include child names or session notes. Local note reminders also use generic messages.</p>
     <p>Live Activity timers are created and updated on your device. Widgets can display child names, selected behaviors, and recent logging feedback. These surfaces may be visible to someone who can see your screen. Review your widget, notification-preview, and Lock Screen settings.</p>
@@ -61,10 +68,10 @@
     <h2>Backups, exports, and recovery copies</h2>
     <p><strong>Warning:</strong> exported backups, CSV files, and PDF summaries are not encrypted or password-protected by the app. Anyone with access to a file may be able to read it.</p>
     <p>Exports may include sensitive information about multiple children. Store and share them only through destinations you trust. The chosen destination's protections and policies apply.</p>
-    <p>The app keeps local last-good and recovery copies to help prevent data loss. Temporary export copies can remain on the device until cleaned up by the app or operating system. Removing an item from the current app records does not automatically remove it from earlier backups, recovery copies, exports, or recipients' copies.</p>
+    <p>The app keeps local last-good and recovery copies to help prevent data loss. App-created temporary export copies become eligible for cleanup after 24 hours; the app checks at launch and when creating exports. Cleanup may occur later if the app is not running. This does not expire recovery copies or files saved to a destination you choose. Removing an item from the current app records does not automatically remove it from earlier backups, recovery copies, exports, or recipients' copies.</p>
 
     <h2>How long information is kept</h2>
-    <p>The app does not automatically expire your saved records after a set number of days. Current records remain until you delete them or remove the relevant app or cloud data. Local recovery copies are retained to help prevent data loss; they do not have a scheduled expiry. Temporary export files may remain until the app or operating system cleans them up. Files you save or share elsewhere remain subject to that destination's retention and deletion controls.</p>
+    <p>The app does not automatically expire your saved records after a set number of days. Current records remain until you delete them or remove the relevant app or cloud data. Local recovery copies are retained to help prevent data loss; they do not have a scheduled expiry. App-created temporary exports are eligible for cleanup after 24 hours, checked at app launch and export creation; this is not a guaranteed deletion deadline. Files you save or share elsewhere remain subject to that destination's retention and deletion controls.</p>
 
     <h2>Deleting records and managing sharing</h2>
     <p>Use the app's supported delete controls to remove current entries. When sync is available, supported deletions propagate to synced records. The app can retain identifiers marking deleted entries so that another device does not restore them during sync.</p>
